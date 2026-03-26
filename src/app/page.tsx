@@ -68,7 +68,7 @@ export default function HomePage() {
             src="/content/home/about_details.png"
             alt="Dronalay Learning Academy"
             fill
-            className="object-contain sm:object-cover"
+            className="object-cover"
             priority
           />
           {/* Dark Overlay */}
@@ -116,7 +116,7 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center"
+          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center"
         >
           <p className="text-sm mb-2">Scroll Down</p>
           <div className="flex flex-col items-center gap-1">
@@ -186,6 +186,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="relative"
             >
               <Image
                 src="/content/home/students_interaction.png"
@@ -194,7 +195,7 @@ export default function HomePage() {
                 height={400}
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-xl">
+              <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 bg-primary text-white p-6 rounded-xl shadow-xl">
                 <div className="flex items-center gap-3">
                   <GraduationCap size={40} />
                   <div>
